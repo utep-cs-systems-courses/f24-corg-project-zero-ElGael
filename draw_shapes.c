@@ -26,3 +26,13 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow(int leftCol, int size) {
+    print_triangle(leftCol, size);
+    int baseWidth = 2 * size + 1; 
+    int squareLeftCol = leftCol + (baseWidth - size) / 2; 
+    print_square(squareLeftCol, size);
+}
+
+
+
+
